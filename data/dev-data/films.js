@@ -6,7 +6,7 @@ module.exports = [
 		rating: 8.5,
 		box_office: 263136741,
 		duration: 132,
-		director: "Bong Joon Ho",
+		director_id: 6,
 	},
 	{
 		title: "12 Years a Slave",
@@ -15,7 +15,7 @@ module.exports = [
 		rating: 8.1,
 		box_office: 187733202,
 		duration: 134,
-		director: "Steve McQueen",
+		director_id: 8,
 	},
 	{
 		title: "28 Days Later",
@@ -24,7 +24,7 @@ module.exports = [
 		rating: 7.5,
 		box_office: 85720385,
 		duration: 113,
-		director: "Danny Boyle",
+		director_id: 3,
 	},
 	{
 		title: "The Beach",
@@ -33,7 +33,7 @@ module.exports = [
 		rating: 6.6,
 		box_office: 144056873,
 		duration: 119,
-		director: "Danny Boyle",
+		director_id: 3,
 	},
 	{
 		title: "Inherent Vice",
@@ -42,7 +42,7 @@ module.exports = [
 		rating: 6.6,
 		box_office: 14710975,
 		duration: 148,
-		director: "Paul Thomas Anderson",
+		director_id: 4,
 	},
 	{
 		title: "BlacKkKlansman",
@@ -51,7 +51,7 @@ module.exports = [
 		rating: 7.5,
 		box_office: 93413709,
 		duration: 135,
-		director: "Spike Lee",
+		director_id: 5,
 	},
 	{
 		title: "Inception",
@@ -60,7 +60,7 @@ module.exports = [
 		rating: 8.8,
 		box_office: 836848102,
 		duration: 148,
-		director: "Christopher Nolan",
+		director_id: 1,
 	},
 	{
 		title: "Memento",
@@ -69,7 +69,7 @@ module.exports = [
 		rating: 8.4,
 		box_office: 40047078,
 		duration: 113,
-		director: "Christopher Nolan",
+		director_id: 1,
 	},
 	{
 		title: "Interstellar",
@@ -78,7 +78,7 @@ module.exports = [
 		rating: 8.6,
 		box_office: 701729206,
 		duration: 169,
-		director: "Christopher Nolan",
+		director_id: 1,
 	},
 	{
 		title: "Little Women",
@@ -87,7 +87,7 @@ module.exports = [
 		rating: 7.8,
 		box_office: 216601214,
 		duration: 135,
-		director: "Greta Gerwig",
+		director_id: 2,
 	},
 	{
 		title: "Lady Bird",
@@ -96,6 +96,6 @@ module.exports = [
 		rating: 7.4,
 		box_office: 78986478,
 		duration: 94,
-		director: "Greta Gerwig",
+		director_id: 2,
 	},
 ];

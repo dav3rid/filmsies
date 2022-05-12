@@ -1,6 +1,14 @@
 process.env.NODE_ENV = "test";
+const seed = require("../db/seed");
+const testData = require("../data/test-data");
+const db = require("../db");
 
-console.log(process.env);
+afterAll(() => {
+	db.end();
+});
+beforeEach(() => {
+	seed(testData);
+});
 
 describe("nonsense", () => {
 	test("a test", () => {});

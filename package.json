@@ -5,14 +5,16 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "jest",
-		"setup-dbs": "psql -f ./db/setup.sql"
+		"setup-dbs": "psql -f ./db/setup.sql",
+		"seed": "node ./db/run-seed.js"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
 		"dotenv": "^16.0.1",
-		"pg": "^8.7.3"
+		"pg": "^8.7.3",
+		"pg-format": "^1.0.4"
 	},
 	"devDependencies": {
 		"jest": "^28.1.0"
