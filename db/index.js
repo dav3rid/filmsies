@@ -12,7 +12,7 @@ if (!process.env.PGDATABASE) {
 const config =
 	ENV === "production"
 		? {
-				connectionString: process.ebv.DATABASE_URL,
+				connectionString: process.env.DATABASE_URL,
 				ssl: { rejectUnauthorized: false },
 		  }
 		: {};
