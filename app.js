@@ -10,6 +10,8 @@ const {
 
 app.use(express.json());
 
+console.log(randomVar);
+
 app.get('/', (req, res, next) => {
   res.send({ msg: 'Hello! I was added via the CICD pipeline 😀' });
 });
