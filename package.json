@@ -1,32 +1,34 @@
 {
-	"name": "seeding",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "jest",
-		"setup-dbs": "psql -f ./db/setup.sql",
-		"seed": "node ./db/run-seed.js",
-		"start": "node listen.js",
-		"seed-prod": "NODE_ENV=production DATABASE_URL=$(heroku config:get DATABASE_URL) node db/run-seed"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"dotenv": "^16.0.1",
-		"express": "^4.18.1",
-		"pg": "^8.7.3",
-		"pg-format": "^1.0.4"
-	},
-	"devDependencies": {
-		"jest": "^28.1.0",
-		"jest-sorted": "^1.0.14",
-		"supertest": "^6.2.3"
-	},
-	"jest": {
-		"setupFilesAfterEnv": [
-			"jest-sorted"
-		]
-	}
+  "name": "seeding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-utils": "jest utils",
+    "test-app": "jest app",
+    "setup-dbs": "psql -f ./db/setup.sql",
+    "seed": "node ./db/run-seed.js",
+    "start": "node listen.js",
+    "seed-prod": "NODE_ENV=production DATABASE_URL=$(heroku config:get DATABASE_URL) node db/run-seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "pg-format": "^1.0.4"
+  },
+  "devDependencies": {
+    "jest": "^27.0.0",
+    "jest-sorted": "^1.0.14",
+    "supertest": "^6.2.3"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-sorted"
+    ]
+  }
 }
